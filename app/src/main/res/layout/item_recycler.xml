@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Karakter Wayang"
-        android:textColor="#00E35B"
+        android:textColor="#008736"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@id/namaWayang"
@@ -43,9 +43,22 @@
         android:layout_height="wrap_content"
         android:text="Deskripsi wayang."
         android:textSize="12sp"
+        android:ellipsize="end"
+        android:maxLines="3"
         app:layout_constraintStart_toStartOf="@id/karakterWayang"
         app:layout_constraintTop_toBottomOf="@id/karakterWayang"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnHapus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="HAPUS DATA"
+        app:layout_constraintEnd_toEndOf="@id/deskripsiWayang"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/deskripsiWayang"
+        app:layout_constraintTop_toBottomOf="@id/deskripsiWayang" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
